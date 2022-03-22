@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('./fox.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.70;
+  z-index: -1;
+}
+
+.countdown-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.time-container {
+  position: absolute;
+  top: 45%;
+  display: flex;
+
+  justify-content: space-evenly;
+  padding: 10px;
+  width: auto;
+}
+
+.header {
+  position: absolute;
+  top: 20%;
+  font-size: 4rem;
+}
+
+/* inner time small container */
+
+.time-c {
+  margin: 0 2rem;
+  padding: 10px;
+  align-items: center;
+
+}
+
+.big-txt {
+  font-size: 3rem;
+  align-items: center;
+}
